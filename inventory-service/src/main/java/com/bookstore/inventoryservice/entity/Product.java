@@ -1,16 +1,17 @@
-package com.bookstore.orderservice.entity;
+package com.bookstore.inventoryservice.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "orders")
+@Table(name = "product")
 @Data
-public class Order {
+public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long orderId;
-    private Long userId;
     private Long productId;
+    private String productName;
+    private Long productPrice;
 
 }

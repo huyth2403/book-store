@@ -6,8 +6,9 @@ import lombok.Getter;
 public enum OrderStatus {
     CREATED("created"),
     PROCESSING("processing"),
+    INVENTORY_UPDATED("inventory_updated"),
     SUCCESS("success"),
-    FAILED("failed");
+    CANCELLED("cancelled");
 
     private final String status;
 
